@@ -71,8 +71,7 @@ public class MusicService {
                 cover = match.getCoverUrl();
             }
 
-            Object license = item.get("license_ccurl");
-            String licenseName = license == null ? null : license.toString();
+            String licenseName = getString(item, "license_ccurl");
 
             tracks.add(TrackDto.builder()
                 .id(getString(item, "id"))
