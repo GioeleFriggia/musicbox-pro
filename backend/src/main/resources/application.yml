@@ -25,7 +25,7 @@ server:
 app:
   jwt-secret: MusicBoxPro_2026_Segreta_123456789_ABC
   jwt-expiration-ms: 86400000
-  jamendo-client-id: ""
+  jamendo-client-id: "709fa152"
   discogs-token: ""
   discogs-user-agent: "MusicBoxPro/1.0 +mailto:giofriggia@gmail.com"
   cors-allowed-origins: "http://localhost:5173"
