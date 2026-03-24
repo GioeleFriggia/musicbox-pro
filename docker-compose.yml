@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: musicbox-postgres
+    environment:
+      POSTGRES_DB: musicbox
+      POSTGRES_USER: musicbox
+      POSTGRES_PASSWORD: musicbox
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+volumes:
+  postgres_data:
